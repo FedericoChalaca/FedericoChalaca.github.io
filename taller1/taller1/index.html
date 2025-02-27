@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licorexpress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">@ licorexpress</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería de fotos</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-image"></div>
+    </section>
+
+    
+    <section class="carousel">
+        <h2>Licores caros</h2>
+        <div class="carousel-container">
+            <button class="carousel-btn left" onclick="moveCarousel(-1)">&lt;</button>
+            <div class="carousel-track">
+                <img src="media\luis-13-remy-martin-1.webp" class="carousel-image" onclick="updateHero(this.src)" alt="Licor 1">
+                <img src="media\1724867647.jpg" class="carousel-image" onclick="updateHero(this.src)" alt="Licor 2">
+                <img src="media\98.jpg" class="carousel-image" onclick="updateHero(this.src)" alt="Licor 3">
+                <img src="media\images (1).jpg" class="carousel-image" onclick="updateHero(this.src)" alt="Licor 4">
+                <img src="media\images (2).jpg" class="carousel-image" onclick="updateHero(this.src)" alt="Licor 5">
+
+            </div>
+            <button class="carousel-btn right" onclick="moveCarousel(1)">&gt;</button>
+        </div>
+    </section>
+    
+
+
+    <section class="info">
+        <h2>Qué es Licorexpress</h2>
+        <div class="info-container">
+            <img src="media\images (3).jpg" class="info-image" alt="Descripción de la imagen">
+            <p class="info-text">
+                Licorexpress es tu tienda en línea especializada en la venta y distribución de licores premium. 
+                Ofrecemos una amplia selección de bebidas nacionales e importadas, garantizando calidad y exclusividad 
+                en cada compra. Disfruta de una experiencia de compra rápida, segura y con entregas a domicilio para 
+                que puedas brindar en cualquier ocasión especial.
+            </p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>2025 Your Licorexpress. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

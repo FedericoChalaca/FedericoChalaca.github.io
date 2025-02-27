@@ -1,0 +1,429 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF8DC;
+    text-align: center;
+    padding-bottom: 50px; 
+}
+
+/* Barra de Navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #FAF8DC;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Sección Hero */
+.hero {
+    margin-top: 40px;
+    background-color: #7D0C08;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    position:fixed;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según lo necesites */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+
+
+/* Carrusel */
+.carousel {
+    margin: 30px 0;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 120px; /* Ajusta el tamaño estático */
+    height: 120px; /* Ajusta el tamaño estático */
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.carousel-image:hover {
+    transform: scale(1.1);
+}   
+
+.image-box {
+    width: 350px;
+    height: 250px;
+    background-color: #ddd;
+    margin: 5px;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 20%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.left { left: -30px; }
+.right { right: -30px; }
+
+
+.form-button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #222;
+}
+/* Sección de Información */
+.info {
+    margin-top: 30px;
+}
+
+
+.hero-image {
+    width: 100%;
+    height: 300px; /* Establece un tamaño fijo para la imagen destacada */
+    background-size: contain; /* Evita que la imagen se expanda demasiado */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.info-image {
+    width: 200px;
+    height: 150px;
+    background-color: #7D0C08;
+    border-radius: 10px;
+}
+
+.info-text {
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #7D0C08;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF8DC;
+    text-align: center;
+}
+
+/* Barra de Navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #FAF8DC;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Sección Hero */
+.hero {
+    background-color: #7D0C08;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* Estilos Galería */
+.galeria-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.galeria-video {
+    width: 50%;
+    height: 200px;
+    background-color: gray;
+}
+
+.galeria-texto {
+    width: 40%;
+    text-align: left;
+}
+
+.galeria-texto h2 {
+    font-size: 24px;
+}
+
+.galeria-texto p {
+    font-size: 16px;
+    color: gray;
+}
+
+/* Imágenes de la Galería */
+.galeria-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagen {
+    width: 200px;
+    height: 120px;
+    background-color: #7D0C08;
+    border-radius: 10px;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+    border: 2px solid gold;
+}
+
+.seleccionada {
+    border: 3px solid blue;
+}
+
+/* Pie de Página */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #800000; /* Color de fondo */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Contenedor principal */
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Contenedor para los campos */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas */
+.form-group label {
+    width: 20%;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Campos de entrada */
+.form-group input,
+.form-group textarea {
+    width: 75%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de enviar */
+button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+}
+
+/* Enlace de registro */
+.register-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #800000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+/* Contenedor principal */
+.register-form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Contenedor de cada campo */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Estilos de las etiquetas */
+.form-group label {
+    width: 25%;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Campos de entrada */
+.form-group input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de registro */
+button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+}
+.galeria-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Ajusta según necesites */
+    margin: auto;
+}
+body {
+    margin: 0;
+    padding-bottom: 60px; /* Ajusta según la altura del footer */
+}
+
+
+.galeria-video-container iframe {
+    width: 100%;
+    height: 315px; /* Mantiene proporción */
+}
+
+.galeria-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria-imagenes img {
+    width: 300px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+}
